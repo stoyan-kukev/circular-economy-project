@@ -1,0 +1,27 @@
+---
+import type { InferGetStaticPropsType } from "astro";
+import { getCollection } from "astro:content";
+import DefaultLayout from "../../layouts/DefaultLayout.astro";
+
+export async function getStaticPaths() {
+	return await getCollection("blog", ({ data }) => !data.isDraft).then(
+		(posts) =>
+			posts.map((post) => ({
+				props: { post },
+				params: { slug: post.slug }
+			}))
+	);
+}
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>;
+
+const { post } = Astro.props;
+const { author, publishDate, title } = post.data;
+const { Content } = await post.render();
+---
+
+<DefaultLayout title={title}>
+	<h1>{title}</h1>
+	<Content />
+	<p>{author} - {publishDate.toLocaleDateString()}</p>
+</DefaultLayout>
