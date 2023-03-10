@@ -1,3 +1,91 @@
-<nav>
-  <p>there we gooo</p>
+<script>
+  const mobileToggle = document.getElementById('mobileToggle')!;
+  const mobileMenu = document.getElementById('mobileMenu')!;
+
+  mobileToggle.addEventListener('click', () => {
+    mobileMenu.classList.toggle('h-40');
+  });
+</script>
+
+<nav
+  class="mx-auto block w-full max-w-screen-xl lg:rounded-xl lg:border border-white/80 bg-opacity-80 py-2 px-4 text-white shadow-md backdrop-blur-2xl backdrop-saturate-200 lg:px-8 lg:py-4 lg:mt-3 bg-background"
+>
+  <div>
+    <div class="container mx-auto flex items-center justify-between text-main">
+      <a
+        href="#"
+        class="mr-4 block cursor-pointer py-1.5 text-base leading-normal text-inherit antialiased bold"
+      >
+        <span class="font-extrabold">For green world</span>
+      </a>
+      <ul class="hidden items-center gap-6 lg:flex">
+        <li
+          class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+        >
+          <a class="flex items-center" href="#"> Home</a>
+        </li>
+        <li
+          class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+        >
+          <a class="flex items-center" href="#"> Page 1</a>
+        </li>
+        <li
+          class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+        >
+          <a class="flex items-center" href="#"> Page 2</a>
+        </li>
+        <li
+          class="block p-1 font-sans text-sm font-normal leading-normal text-inherit antialiased"
+        >
+          <a class="flex items-center" href="#"> Page 3</a>
+        </li>
+      </ul>
+      <button
+        class="middle none relative ml-auto h-6 max-h-[40px] w-6 max-w-[40px] rounded-lg text-center font-sans text-xs font-medium uppercase text-blue-gray-500 transition-all hover:bg-transparent focus:bg-transparent active:bg-transparent disabled:pointer-events-none disabled:opacity-50 disabled:shadow-none lg:hidden"
+        id="mobileToggle"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="h-6 w-6"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+    <div
+      class="block h-0 w-full basis-full overflow-hidden transition-all duration-300 ease-in lg:hidden"
+      id="mobileMenu"
+    >
+      <div class="container mx-auto">
+        <ul class="mt-2 mb-4 flex flex-col gap-2">
+          <li
+            class="block p-1 font-sans text-sm font-normal leading-normal text-blue-gray-600 text-inherit antialiased"
+          >
+            <a class="flex items-center" href="#"> Home</a>
+          </li>
+          <li
+            class="block p-1 font-sans text-sm font-normal leading-normal text-blue-gray-600 text-inherit antialiased"
+          >
+            <a class="flex items-center" href="#"> Page 1</a>
+          </li>
+          <li
+            class="block p-1 font-sans text-sm font-normal leading-normal text-blue-gray-600 text-inherit antialiased"
+          >
+            <a class="flex items-center" href="#"> Page 2</a>
+          </li>
+          <li
+            class="block p-1 font-sans text-sm font-normal leading-normal text-blue-gray-600 text-inherit antialiased"
+          >
+            <a class="flex items-center" href="#"> Page 3</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
 </nav>
