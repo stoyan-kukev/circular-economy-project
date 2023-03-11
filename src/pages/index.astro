@@ -3,9 +3,9 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 ---
 
 <DefaultLayout title="Main Page">
-	<div class="hero min-h-[40vh] bg-base-200">
+	<div class="hero bg-base-200">
 		<div class="hero-content flex-col lg:flex-row-reverse">
-			<img src="/recycle.png" class="max-w-sm rounded-lg" />
+			<img src="/recycle.png" class="max-w-sm rounded-lg recycle" />
 			<div>
 				<h1 class="text-5xl font-bold">
 					Да направим света <span class="green">по-зелен</span>
@@ -17,6 +17,23 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 				</p>
 				<button class="btn btn-primary">Помогни днес</button>
 			</div>
+		</div>
+	</div>
+	<div
+		class="max-w-7xl grid md:grid-cols-2 grid-cols-1 place-self-center content-between my-10"
+	>
+		<div class="p-5">
+			<h1 class="text-5xl font-bold">Как работи кръговата икономика?</h1>
+			<p class="py-6">
+				Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat
+				accusamus culpa nihil excepturi? Laudantium vero debitis aut
+				tempora autem, aperiam tempore, veritatis assumenda voluptatem
+				commodi officiis, consectetur sapiente minus impedit.
+			</p>
+			<button class="btn btn-primary">Разбери още</button>
+		</div>
+		<div class="">
+			<img src="/circular_economy.png" alt="" />
 		</div>
 	</div>
 </DefaultLayout>
@@ -42,7 +59,7 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 		animation: color-green 1s ease-out forwards;
 	}
 
-	img {
+	.recycle {
 		animation: rotate-img 20s linear infinite;
 	}
 </style>
