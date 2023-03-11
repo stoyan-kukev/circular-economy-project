@@ -20,3 +20,29 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 		</div>
 	</div>
 </DefaultLayout>
+
+<style>
+	@keyframes rotate-img {
+		from {
+			transform: rotate(0deg);
+		}
+
+		to {
+			transform: rotate(359deg);
+		}
+	}
+
+	@keyframes color-green {
+		to {
+			color: green;
+		}
+	}
+
+	.green {
+		animation: color-green 1s ease-out forwards;
+	}
+
+	img {
+		animation: rotate-img 20s linear infinite;
+	}
+</style>
