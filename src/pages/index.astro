@@ -5,7 +5,11 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 <DefaultLayout title="Main Page">
 	<div class="hero bg-base-200">
 		<div class="hero-content flex-col lg:flex-row-reverse">
-			<img src="/recycle.png" class="max-w-sm rounded-lg recycle" />
+			<!-- FIXME: sm: queries are not a good practice -->
+			<img
+				src="/recycle.png"
+				class="max-w-sm rounded-lg recycle sm:w-3/4 sm:h-3/4"
+			/>
 			<div>
 				<h1 class="text-5xl font-bold">
 					Да направим света <span class="green">по-зелен</span>
