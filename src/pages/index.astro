@@ -5,7 +5,7 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 <DefaultLayout title="Main Page">
 	<div class="hero bg-base-200">
 		<div class="hero-content flex-col md:flex-row-reverse">
-			<!-- FIXME: sm: queries are not a good practice -->
+			<!-- FIXME: there is a bit of overflow-x, maybe some container? -->
 			<img
 				src="/recycle.png"
 				class="max-w-sm rounded-lg recycle sm:w-3/4 sm:h-3/4"
@@ -26,6 +26,9 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 	<div
 		class="max-w-7xl grid md:grid-cols-2 grid-cols-1 place-self-center content-between my-10"
 	>
+		<div>
+			<img src="/circular_economy.png" alt="" />
+		</div>
 		<div class="p-5">
 			<h1 class="text-5xl font-bold">Как работи кръговата икономика?</h1>
 			<p class="py-6">
@@ -35,9 +38,6 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 				commodi officiis, consectetur sapiente minus impedit.
 			</p>
 			<button class="btn btn-primary">Разбери още</button>
-		</div>
-		<div class="">
-			<img src="/circular_economy.png" alt="" />
 		</div>
 	</div>
 </DefaultLayout>
