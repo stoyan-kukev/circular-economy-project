@@ -1,19 +1,19 @@
 {
-  "name": "ciruclar-economy-project",
-  "type": "module",
-  "version": "0.4.0",
-  "scripts": {
-    "dev": "astro check --watch & astro dev",
-    "start": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/tailwind": "^3.1.0",
-    "@fingerprintjs/fingerprintjs-pro": "^3.8.2",
-    "astro": "^2.1.2",
-    "daisyui": "^2.51.3",
-    "tailwindcss": "^3.0.24"
-  }
+	"name": "ciruclar-economy-project",
+	"type": "module",
+	"version": "0.4.0",
+	"scripts": {
+		"dev": "astro check --watch & astro dev",
+		"start": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro"
+	},
+	"dependencies": {
+		"@astrojs/tailwind": "^3.1.0",
+		"@fingerprintjs/fingerprintjs-pro": "^3.8.2",
+		"astro": "^2.1.2",
+		"daisyui": "^2.51.3",
+		"tailwindcss": "^3.0.24"
+	}
 }
