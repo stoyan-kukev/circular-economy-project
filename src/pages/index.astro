@@ -3,23 +3,9 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 ---
 
 <DefaultLayout title="Main Page">
-	<script type="module">
-		import FingerprintJS from "../../node_modules/@fingerprintjs/fingerprintjs-pro";
-
-		if (document.location.hostname !== "localhost") {
-			// Initialize an agent at application startup.
-			const fpPromise = FingerprintJS.load({
-				apiKey: "MYFYvn6LOj3qVJz6SZl8",
-				region: "eu",
-			});
-
-			// Get the visitor identifier when you need it.
-			fpPromise.then((fp) => fp.get()).then((result) => console.log(result));
-		}
-	</script>
 	<div class="hero bg-base-200">
 		<div class="hero-content flex-col lg:flex-row-reverse">
-			<img src="/recycle.png" class="max-w-sm rounded-lg recycle" />
+			<img src="/recycle.png" class="max-w-sm rounded-lg" />
 			<div>
 				<h1 class="text-5xl font-bold">
 					Да направим света <span class="green">по-зелен</span>
@@ -53,16 +39,6 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 </DefaultLayout>
 
 <style>
-	@keyframes rotate-img {
-		from {
-			transform: rotate(0deg);
-		}
-
-		to {
-			transform: rotate(359deg);
-		}
-	}
-
 	@keyframes color-green {
 		to {
 			color: green;
@@ -70,10 +46,6 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 	}
 
 	.green {
-		animation: color-green 1s ease-out forwards;
-	}
-
-	.recycle {
-		animation: rotate-img 20s linear infinite;
+		animation: color-green 3s ease-out forwards;
 	}
 </style>
