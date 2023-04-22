@@ -1,7 +1,7 @@
 {
 	"name": "ciruclar-economy-project",
 	"type": "module",
-	"version": "0.5.0",
+	"version": "0.5.1",
 	"scripts": {
 		"dev": "astro check --watch & astro dev",
 		"start": "astro dev",
