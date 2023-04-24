@@ -1,0 +1,22 @@
+---
+import Answer from "./Answer.astro";
+export interface Props {
+	answers: string[];
+	question: string;
+}
+
+const { question, answers } = Astro.props;
+---
+
+<div class="card w-96 bg-base-100 shadow-xl mb-5 py-2">
+	<div class="card-body">
+		<h2 class="card-title">{question}</h2>
+
+		<form>
+			{answers.map((answer) => <Answer name={answer} />)}
+		</form>
+		<div class="card-actions justify-end mt-4">
+			<button onclick="handleClick" class="btn btn-primary">Напред</button>
+		</div>
+	</div>
+</div>
