@@ -1,5 +1,4 @@
 ---
-import Footer from "./Footer.astro";
 ---
 
 <div class="drawer drawer-side">
@@ -29,25 +28,23 @@ import Footer from "./Footer.astro";
 			<div class="flex-none hidden lg:block">
 				<ul class="menu menu-horizontal">
 					<!-- Navbar menu content here -->
-					<li><a>Начало</a></li>
-					<li><a>Как да помогнеш</a></li>
-					<li><a>Анкета</a></li>
+					<li><a href="/">Начало</a></li>
+					<li><a href="/help">Как да помогнеш</a></li>
+					<li><a href="/survey">Анкета</a></li>
 				</ul>
 			</div>
 		</div>
 
 		<!-- Page content here -->
 		<slot />
-
-		<Footer />
 	</div>
 	<div class="drawer-side">
 		<label for="my-drawer-3" class="drawer-overlay"></label>
 		<ul class="menu p-4 w-80 bg-base-100">
 			<!-- Sidebar content here -->
-			<li><a>Начало</a></li>
-			<li><a>Как да помогнеш</a></li>
-			<li><a>Анкета</a></li>
+			<li><a href="/">Начало</a></li>
+			<li><a href="/help">Как да помогнеш</a></li>
+			<li><a href="/survey">Анкета</a></li>
 		</ul>
 	</div>
 </div>
