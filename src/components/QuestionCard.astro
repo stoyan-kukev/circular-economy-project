@@ -16,7 +16,7 @@ const { question, answers } = Astro.props;
 			{answers.map((answer) => <Answer name={answer} />)}
 		</form>
 		<div class="card-actions justify-end mt-4">
-			<button class="btn btn-primary">Напред</button>
+			<button onclick="handleClick" class="btn btn-primary">Напред</button>
 		</div>
 	</div>
 </div>

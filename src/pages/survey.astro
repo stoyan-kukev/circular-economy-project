@@ -1,77 +1,15 @@
 ---
-import QuestionCard from "../components/QuestionCard.astro";
 import DefaultLayout from "../layouts/DefaultLayout.astro";
-
-const data = [
-	{
-		question: "Какво всъщност изучава биол. наука екология?",
-		answers: [
-			"устройството на организмите",
-			"климата на земята",
-			"взаимотношенията м/у организмите",
-		],
-	},
-
-	{
-		question:
-			"Кое от изброените се ползва като синоним за думата ,,рециклиране”?",
-		answers: ["цикълът на боклука", "сметообработване", "сметопреработване"],
-	},
-
-	{
-		question: "Рециклирал ли си някога?",
-		answers: ["Да", "Не", "Не помня"],
-	},
-
-	{
-		question:
-			"Кога за първи път научи значението на думата ,,рециклиране” и за нейната необходимост?",
-		answers: [
-			"в начален етап",
-			"в прогимназиален етап",
-			"все още нищо не знам по темата",
-		],
-	},
-
-	{
-		question:
-			"Бил ли си и искаш ли да бъдеш част от така наречените ,,Еко кампании” или ,,Еко проекти”?",
-		answers: [
-			"Бил съм част.",
-			"Не съм бил и не искам да бъда.",
-			"Не съм бил, но искам да бъда.",
-		],
-	},
-
-	{
-		question: "Смяташ ли, че знаеш достатъчно на тема ,,Екология”?",
-		answers: ["Да", "Не", "Не ме интересува"],
-	},
-
-	{
-		question:
-			"Смяташ ли, че в училище трябва да се обръща по-специално внимание на рециклирането?",
-		answers: ["Да", "Не", "Не ме интересува"],
-	},
-
-	{
-		question: "Сподели своя опит:",
-		answers: [],
-	},
-];
+import Questions from "../components/Questions";
 ---
 
 <DefaultLayout title="Анкета">
 	<div class="hero min-h-screen bg-base-200">
 		<div class="hero-content text-center">
-			<div class="max-w-md">
+			<div id="cards" class="max-w-md">
 				<h1 class="text-5xl font-bold mb-4">Анкета</h1>
 
-				{
-					data.map((item) => (
-						<QuestionCard answers={item.answers} question={item.question} />
-					))
-				}
+				<Questions client:load />
 			</div>
 		</div>
 	</div>
