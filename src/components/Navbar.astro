@@ -1,3 +1,7 @@
+---
+import Footer from "./Footer.astro";
+---
+
 <div class="drawer drawer-side">
 	<!-- Best practices or smthn -->
 	<label for="my-drawer-3" class="opacity-0"></label>
@@ -34,6 +38,8 @@
 
 		<!-- Page content here -->
 		<slot />
+
+		<Footer />
 	</div>
 	<div class="drawer-side">
 		<label for="my-drawer-3" class="drawer-overlay"></label>
