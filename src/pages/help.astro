@@ -3,5 +3,66 @@ import DefaultLayout from "../layouts/DefaultLayout.astro";
 ---
 
 <DefaultLayout title="Как да помогнеш">
-	<h1>Как да помогнеш</h1>
+	<h1 class="text-center text-5xl font-bold py-6 text-black">
+		Начини да се справим със замърсяването
+	</h1>
+	<div
+		class="card card-side bg-base-100 shadow-xl max-w-7xl grid md:grid-cols-2 grid-cols-1 place-self-center content-between my-10"
+	>
+		<figure class="rounded-none">
+			<img src="/nature-picture.jpg" alt="" class="h-full" />
+		</figure>
+		<div class="card-body">
+			<h2 class="card-title text-4xl font-bold">Природата</h2>
+			<p class="py-6 text-2xl">
+				• Проектиране и производство на биопродукти<br />
+				• Ефективно управление на отпадъците и рециклиране<br />
+				• Политики подкрепящи биоземеделието<br />
+				• Транспорт и промишленост, захранавани с енергия от възобновяеми източници<br
+				/>
+			</p>
+		</div>
+	</div>
+
+	<div
+		class="card card-side bg-base-100 shadow-xl max-w-7xl grid md:grid-cols-2 grid-cols-1 place-self-center content-between my-10"
+	>
+		<figure class="rounded-none">
+			<img src="/water-picture.jpg" alt="" />
+		</figure>
+		<div class="card-body">
+			<h2 class="card-title text-4xl font-bold">Водата</h2>
+			<p class="py-6 text-2xl">
+				• Стремеж на всеки човек трябва да е да пести водата<br />
+				• Намаляване на замърсяването, причинено от домакинствата и промишлеността<br
+				/>
+				• Използване на биологични филтри, пясъчни филтри и др<br />
+			</p>
+		</div>
+	</div>
+
+	<div
+		class="card card-side bg-base-100 shadow-xl max-w-7xl grid md:grid-cols-2 grid-cols-1 place-self-center content-between my-10"
+	>
+		<figure class="rounded-none">
+			<img src="/air-picture.jpg" alt="" />
+		</figure>
+		<div class="card-body">
+			<h2 class="card-title text-4xl font-bold">Въздухът</h2>
+			<p class="py-6 text-2xl">
+				• Замяна на твърдите горива с екологично чисти<br />
+				• Енергия от възобновяеми източници<br />
+				• Намаляване на въглеродния отпечатък<br />
+				• Алтернативен транспорт<br />
+			</p>
+		</div>
+	</div>
+	<!-- Prepare iframe of presentation for future use -->
+	<!-- <iframe
+		src="https://prezi.com/p/embed/2H5yqDh88mlv6LhMBvOK/"
+		id="iframe_container"
+		allowfullscreen=""
+		allow="autoplay; fullscreen"
+		height="315"
+		width="560"></iframe> -->
 </DefaultLayout>
